@@ -1,10 +1,16 @@
 # Status Check-in (11:00 AM)
 
 ## Done
-- Repository setup, README, and personal constants block , Part A & Part B trace questions and Dart functions (B2, B3, C5, D2)
+- - Part A (A1, A2): Variables, operators, and type inference
+- Part B (B1, B2, B3): String methods, countVowels, and initials
+- Part C (C1, C2, C3, C4, C5): Control flow traces and drawTriangle
+- Part D (D1, D2): Scope, VAT calculation, and MoMo receipt printer
+- Part E: Fixed grade() and isPalindrome() functions
+- Part F: Completed momo_sim.dart USSD simulator
+- Part G: Completed debugging log in answers.pdf
 
 ## In progress
-- Part E , Part F , Part G , PDF 
+- None
 
 ## Stuck on
-- Part E , Part F , Part G , PDF
+- None
