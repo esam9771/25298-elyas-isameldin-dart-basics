@@ -41,16 +41,6 @@ void drawTriangle(int height) {
   }
 }
 
-int count = 1;
-void bump() {
-  int count = 10;
-  count++;
-}
-void doubleIt(int value) {
-  value = value * 2;
-}
-int addVat(int price, {int rate = 18}) => price + price * rate ~/ 100;
-
 int momoFee(int amount) {
   // by IE
   if (amount <= 0) return -1;
@@ -70,45 +60,8 @@ void main() {
   // by IE
   print('Reg no: $regNo | D = $d | T = $t');
 
-  // Part A
-  // A1
-  int a = 17;
-  int b = 5;
-  print(a / b);
-  print(a ~/ b);
-  print(a % b);
-  print(-a % b);
-  print(-a ~/ b);
-  print(-17.abs());
-  print(0.1 + 0.2 == 0.3);
-  print(10 == 10.0); 
-
-  // A2
-  int x = d;
-  int y = t;
-  var z = x * 2 + y ~/ 4;
-  z += x;
-  print(z);
-  print(z.isEven);
-  print('$z' + '$x');
-
-  // Part B: Strings (18 marks)
-  // B1
-  String city = 'Kigali';
-  print(city.length);
-  print(city[city.length - 1]);
-  print(city.substring(2, 4));
-  print(city.toUpperCase().indexOf('A'));
-  print(city.contains('k'));
-  print('$city.length');
-  print('${city.length}');
-  print(city * 2);
-  city.toUpperCase();
-  print(city);
-  print(city.replaceAll('i', '!'));
-  print('5' + 5.toString());
-  print(int.parse('5') + 5);
-
+  // Part B: Strings 
+ 
   // B2
   String fullName = 'ISAMELDIN MOHAMED OSMAN ELYAS';
   int vowelCount = countVowels(fullName);
@@ -119,69 +72,15 @@ void main() {
   print(initials('  ana   uwase  '));
   print(initials('   '));
 
-  // Part C: Control flow (18 marks)
-  // C1
-  for (int i = 0; i < 6; i++) {
-    if (i == 2) continue;
-    if (i == 4) break;
-    print(i);
-  }
-
-  // C2
-  int day = 2;
-  switch (day) {
-    case 1:
-    case 2:
-      print('Early week');
-    case 3:
-      print('Midweek');
-    default:
-      print('Weekend soon');
-  }
-
-  // C3
-  int? bonus;
-  print(bonus ?? 50);
-  bonus ??= 70;
-  bonus ??= 90;
-  print(bonus);
-  int n = 10;
-  do {
-    print(n);
-    n += 3;
-  } while (n < 10);
-
-  // C4
-  x = d;
-  String result = '';
-  while (x > 0) {
-    if (x % 2 == 0) {
-      result += 'E';
-    } else {
-      result += 'O';
-    }
-    x -= 3;
-  }
-  print(result);
-  print(result.length);
-  print(result.isEmpty ? 'nothing' : result[0]);
+  // Part C: Control flow 
 
   // C5
   drawTriangle(d + 3);
   drawTriangle(0);
   drawTriangle(-2);
 
-  // Part D: Functions (10 marks)
-  // D1
-  bump();
-  print(count);
-  int v = 5;
-  doubleIt(v);
-  print(v);
-  print(addVat(1000));
-  print(addVat(999));
-  print(addVat(1000, rate: 0));
-
+  // Part D: Functions 
+ 
   // D2
   int sumFees = 0;
   String phone = '0788123456';
